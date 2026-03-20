@@ -1,0 +1,19 @@
+
+  create or replace   view dbt_db.dbt_schema.stg_tpch_customer
+  
+  
+  
+  
+  as (
+    SELECT
+    c_custkey as customer_key,
+    c_name as customer_name,
+    c_address as customer_address,
+    c_nationkey as nation_key,
+    c_phone as phone_number,
+    c_acctbal as account_balance,
+    c_mktsegment as market_segment,
+    c_comment as customer_comment
+FROM snowflake_sample_data.tpch_sf1.customer
+  );
+

@@ -1,0 +1,66 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Raw TPC-H sample dataset from Snowflake shares."
+    database: snowflake_sample_data
+    schema: tpch_sf1
+
+    tables:
+      - name: orders
+        description: "Raw orders data."
+        columns:
+          - name: o_orderkey
+            tests:
+              - unique
+              - not_null
+
+      - name: lineitem
+        description: "Raw line item data for each order."
+        columns:
+          - name: l_orderkey
+            tests:
+              - not_null
+          - name: l_linenumber
+            tests:
+              - not_null
+
+      - name: customer
+        description: "Raw customer data."
+        columns:
+          - name: c_custkey
+            tests:
+              - unique
+              - not_null
+
+      - name: part
+        description: "Raw parts data."
+        columns:
+          - name: p_partkey
+            tests:
+              - unique
+              - not_null
+
+      - name: supplier
+        description: "Raw supplier data."
+        columns:
+          - name: s_suppkey
+            tests:
+              - unique
+              - not_null
+
+      - name: nation
+        description: "Lookup table for nations."
+        columns:
+          - name: n_nationkey
+            tests:
+              - unique
+              - not_null
+
+      - name: region
+        description: "Lookup table for regions."
+        columns:
+          - name: r_regionkey
+            tests:
+              - unique
+              - not_null

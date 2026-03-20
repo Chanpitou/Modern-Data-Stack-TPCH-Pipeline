@@ -1,0 +1,80 @@
+version: 2
+
+models:
+  - name: stg_tpch_orders
+    description: "Staged orders data."
+    columns:
+      - name: order_key
+        tests:
+          - unique
+          - not_null
+      - name: customer_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_customer')
+              field: customer_key
+
+  - name: stg_tpch_lineitem
+    description: "Staged line item data."
+    columns:
+      - name: order_item_key
+        tests:
+          - unique
+          - not_null
+      - name: order_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_orders')
+              field: order_key
+
+  - name: stg_tpch_customer
+    description: "Staged customer information."
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+      - name: nation_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_nation')
+              field: nation_key
+
+  - name: stg_tpch_supplier
+    description: "Staged supplier information."
+    columns:
+      - name: supplier_key
+        tests:
+          - unique
+          - not_null
+      - name: nation_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_nation')
+              field: nation_key
+
+  - name: stg_tpch_nation
+    description: "Lookup table for nations."
+    columns:
+      - name: nation_key
+        tests:
+          - unique
+          - not_null
+      - name: region_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch_region')
+              field: region_key
+
+  - name: stg_tpch_region
+    description: "Lookup table for world regions."
+    columns:
+      - name: region_key
+        tests:
+          - unique
+          - not_null
