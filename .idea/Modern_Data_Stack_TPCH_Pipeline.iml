@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/data_venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (Modern_Data_Stack_TPCH_Pipeline)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Modern-Data-Stack-TPCH-Pipeline)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

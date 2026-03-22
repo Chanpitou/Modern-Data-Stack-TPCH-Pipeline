@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (Modern_Data_Stack_TPCH_Pipeline)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Modern_Data_Stack_TPCH_Pipeline)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Modern-Data-Stack-TPCH-Pipeline)" project-jdk-type="Python SDK" />
 </project>
