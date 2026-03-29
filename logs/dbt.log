@@ -10163,3 +10163,943 @@ parsing.
 [0m21:37:04.413888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA214EEBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA2176E240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA2176F590>]}
 [0m21:37:04.413888 [debug] [MainThread]: Flushing usage events
 [0m21:37:05.257282 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:10.707714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F95F7DFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F954767E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F95477140>]}
+
+
+============================== 01:05:10.717380 | e810bd02-d488-4826-8bca-7539451f1b48 ==============================
+[0m01:05:10.717380 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:05:10.718383 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:05:10.732208 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:05:10.733219 [info ] [MainThread]: python version: 3.12.10
+[0m01:05:10.734222 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:05:10.734222 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:05:10.734222 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:05:10.735232 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:05:10.735232 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:05:10.834611 [info ] [MainThread]: Configuration:
+[0m01:05:10.834611 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:05:10.835614 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:05:10.835614 [info ] [MainThread]: Required dependencies:
+[0m01:05:10.836661 [debug] [MainThread]: Executing "git --help"
+[0m01:05:10.872020 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:05:10.872020 [debug] [MainThread]: STDERR: "b''"
+[0m01:05:10.873022 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:05:10.873022 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:05:10.874218 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:05:10.874218 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\umcha\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:05:10.875228 [debug] [MainThread]: Command `dbt debug` failed at 01:05:10.875228 after 0.32 seconds
+[0m01:05:10.875228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F955A9A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F9719E060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F95F79A30>]}
+[0m01:05:10.876232 [debug] [MainThread]: Flushing usage events
+[0m01:05:11.459497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:07:44.548955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F371EF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F37C5190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F37C5F10>]}
+
+
+============================== 01:07:44.553986 | a894a9e9-8563-4bb4-be91-fa289bc6826c ==============================
+[0m01:07:44.553986 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:07:44.554987 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:07:44.565541 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:07:44.566902 [info ] [MainThread]: python version: 3.12.10
+[0m01:07:44.566902 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:07:44.567907 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:07:44.567907 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:07:44.567907 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:07:44.568917 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:07:44.667253 [info ] [MainThread]: Configuration:
+[0m01:07:44.667253 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:07:44.667253 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:07:44.668268 [info ] [MainThread]: Required dependencies:
+[0m01:07:44.668268 [debug] [MainThread]: Executing "git --help"
+[0m01:07:44.702101 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:07:44.702101 [debug] [MainThread]: STDERR: "b''"
+[0m01:07:44.703104 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:07:44.703104 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:07:44.704110 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:07:44.704110 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\umcha\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:07:44.704110 [debug] [MainThread]: Command `dbt debug` failed at 01:07:44.704110 after 0.25 seconds
+[0m01:07:44.704110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F3D72660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F30F18B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7F30F1850>]}
+[0m01:07:44.705613 [debug] [MainThread]: Flushing usage events
+[0m01:07:45.274369 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:09:26.983116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FDE73F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FDE73F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FDB02360>]}
+
+
+============================== 01:09:26.987641 | bfb18262-d414-461f-a684-329366fa76db ==============================
+[0m01:09:26.987641 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:09:26.988644 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:09:27.000200 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:09:27.001203 [info ] [MainThread]: python version: 3.12.10
+[0m01:09:27.001203 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:09:27.001203 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:09:27.002217 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:09:27.002217 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:09:27.002217 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:09:27.097431 [info ] [MainThread]: Configuration:
+[0m01:09:27.098454 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:09:27.098454 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:09:27.098454 [info ] [MainThread]: Required dependencies:
+[0m01:09:27.099458 [debug] [MainThread]: Executing "git --help"
+[0m01:09:27.131589 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:09:27.131589 [debug] [MainThread]: STDERR: "b''"
+[0m01:09:27.132593 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:09:27.132593 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:09:27.132593 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:09:27.133598 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\umcha\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:09:27.133598 [debug] [MainThread]: Command `dbt debug` failed at 01:09:27.133598 after 0.25 seconds
+[0m01:09:27.134602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FE360C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FA79CAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FDCC2000>]}
+[0m01:09:27.134602 [debug] [MainThread]: Flushing usage events
+[0m01:09:27.694487 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:15:22.907549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FF7A20C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FF09EB40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FF09F6E0>]}
+
+
+============================== 01:15:22.912658 | 33b02f92-9112-418e-b14c-a1cadc21e92b ==============================
+[0m01:15:22.912658 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:15:22.914162 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:15:22.927749 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:15:22.927749 [info ] [MainThread]: python version: 3.12.10
+[0m01:15:22.928751 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:15:22.928751 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:15:22.928751 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:15:22.929760 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:15:22.929760 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:15:23.026661 [info ] [MainThread]: Configuration:
+[0m01:15:23.026661 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:15:23.027674 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:15:23.027674 [info ] [MainThread]: Required dependencies:
+[0m01:15:23.027674 [debug] [MainThread]: Executing "git --help"
+[0m01:15:23.059585 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:15:23.060588 [debug] [MainThread]: STDERR: "b''"
+[0m01:15:23.060588 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:15:23.060588 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:15:23.061591 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:15:23.061591 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\umcha\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:15:23.062597 [debug] [MainThread]: Command `dbt debug` failed at 01:15:23.062597 after 0.26 seconds
+[0m01:15:23.062597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FF7A20C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FFCEFA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224FF1A82C0>]}
+[0m01:15:23.062597 [debug] [MainThread]: Flushing usage events
+[0m01:15:23.658371 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:15:52.339556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F96171460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F96172300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F96173710>]}
+
+
+============================== 01:15:52.345089 | 07bf6010-18f8-4038-853b-49990cd1f0ed ==============================
+[0m01:15:52.345089 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:15:52.345089 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:15:52.358191 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:15:52.359198 [info ] [MainThread]: python version: 3.12.10
+[0m01:15:52.359198 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:15:52.359198 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:15:52.360203 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:15:52.360203 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:15:52.360203 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:15:52.455701 [info ] [MainThread]: Configuration:
+[0m01:15:52.455701 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m01:15:52.457205 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:15:52.457205 [info ] [MainThread]: Required dependencies:
+[0m01:15:52.458219 [debug] [MainThread]: Executing "git --help"
+[0m01:15:52.490111 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:15:52.490111 [debug] [MainThread]: STDERR: "b''"
+[0m01:15:52.491114 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:15:52.491114 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m01:15:52.491114 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:15:52.491114 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\umcha\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:15:52.492117 [debug] [MainThread]: Command `dbt debug` failed at 01:15:52.492117 after 0.25 seconds
+[0m01:15:52.492117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F96440C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F969071A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F9625ECF0>]}
+[0m01:15:52.493134 [debug] [MainThread]: Flushing usage events
+[0m01:15:53.031472 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:19:50.300448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EC44ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EC7B24E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EC749370>]}
+
+
+============================== 01:19:50.305964 | 174cdcfe-bc18-4f96-9823-023675664ba7 ==============================
+[0m01:19:50.305964 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:19:50.306967 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:19:50.320033 [info ] [MainThread]: dbt version: 1.11.7
+[0m01:19:50.320033 [info ] [MainThread]: python version: 3.12.10
+[0m01:19:50.321036 [info ] [MainThread]: python path: D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\data_venv\Scripts\python.exe
+[0m01:19:50.321036 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:19:52.453153 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:19:52.454170 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:19:52.454170 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:19:52.509545 [info ] [MainThread]: Using profiles dir at C:\Users\umcha\.dbt
+[0m01:19:52.509545 [info ] [MainThread]: Using profiles.yml file at C:\Users\umcha\.dbt\profiles.yml
+[0m01:19:52.509545 [info ] [MainThread]: Using dbt_project.yml file at D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\dbt_project.yml
+[0m01:19:52.510559 [info ] [MainThread]: adapter type: snowflake
+[0m01:19:52.511574 [info ] [MainThread]: adapter version: 1.11.3
+[0m01:19:52.669722 [info ] [MainThread]: Configuration:
+[0m01:19:52.670737 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:19:52.670737 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:19:52.670737 [info ] [MainThread]: Required dependencies:
+[0m01:19:52.671751 [debug] [MainThread]: Executing "git --help"
+[0m01:19:52.757229 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:19:52.758668 [debug] [MainThread]: STDERR: "b''"
+[0m01:19:52.758668 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:19:52.758668 [info ] [MainThread]: Connection:
+[0m01:19:52.758668 [info ] [MainThread]:   account: kjhvqpx-jgb67686
+[0m01:19:52.759839 [info ] [MainThread]:   user: chanpitou
+[0m01:19:52.759839 [info ] [MainThread]:   database: dbt_db
+[0m01:19:52.759839 [info ] [MainThread]:   warehouse: data_wh
+[0m01:19:52.760842 [info ] [MainThread]:   role: data_role
+[0m01:19:52.760842 [info ] [MainThread]:   schema: dbt_schema
+[0m01:19:52.760842 [info ] [MainThread]:   authenticator: None
+[0m01:19:52.760842 [info ] [MainThread]:   oauth_client_id: None
+[0m01:19:52.760842 [info ] [MainThread]:   query_tag: None
+[0m01:19:52.760842 [info ] [MainThread]:   client_session_keep_alive: False
+[0m01:19:52.762345 [info ] [MainThread]:   host: None
+[0m01:19:52.762345 [info ] [MainThread]:   port: None
+[0m01:19:52.762345 [info ] [MainThread]:   proxy_host: None
+[0m01:19:52.763357 [info ] [MainThread]:   proxy_port: None
+[0m01:19:52.763357 [info ] [MainThread]:   protocol: None
+[0m01:19:52.763357 [info ] [MainThread]:   connect_retries: 1
+[0m01:19:52.763357 [info ] [MainThread]:   connect_timeout: None
+[0m01:19:52.764360 [info ] [MainThread]:   retry_on_database_errors: False
+[0m01:19:52.764360 [info ] [MainThread]:   retry_all: False
+[0m01:19:52.764360 [info ] [MainThread]:   insecure_mode: False
+[0m01:19:52.765363 [info ] [MainThread]:   reuse_connections: True
+[0m01:19:52.765363 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m01:19:52.765363 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m01:19:52.765363 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m01:19:53.044162 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m01:19:53.138689 [debug] [MainThread]: Using snowflake connection "debug"
+[0m01:19:53.138689 [debug] [MainThread]: On debug: select 1 as id
+[0m01:19:53.139689 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:19:55.409309 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.269 seconds
+[0m01:19:55.410312 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:19:55.410312 [info ] [MainThread]: [32mAll checks passed![0m
+[0m01:19:55.411315 [debug] [MainThread]: Command `dbt debug` succeeded at 01:19:55.411315 after 5.26 seconds
+[0m01:19:55.411315 [debug] [MainThread]: Connection 'debug' was left open.
+[0m01:19:55.411315 [debug] [MainThread]: On debug: Close
+[0m01:19:55.647640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EC8D0260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EF810D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3EF811370>]}
+[0m01:19:55.648640 [debug] [MainThread]: Flushing usage events
+[0m01:19:56.215084 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:20:10.115343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C420A450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C3748320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C37482C0>]}
+
+
+============================== 01:20:10.121345 | 0b12549b-53e4-4b6b-9a1b-619b6d457a58 ==============================
+[0m01:20:10.121345 [info ] [MainThread]: Running with dbt=1.11.7
+[0m01:20:10.121345 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\umcha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt test -s marts', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\User\\umcha\\Desktop\\Data_Workstation\\Modern-Data-Stack-TPCH-Pipeline\\logs'}
+[0m01:20:10.360350 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:20:10.361353 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:20:10.361353 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:20:10.586583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C677FD10>]}
+[0m01:20:10.639827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C3E58BF0>]}
+[0m01:20:10.640834 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m01:20:10.930371 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m01:20:11.086192 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 50 files changed.
+[0m01:20:11.087198 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\pivot.sql
+[0m01:20:11.087198 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\surrogate_key.sql
+[0m01:20:11.088197 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\nullcheck.sql
+[0m01:20:11.088701 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\recency.sql
+[0m01:20:11.088701 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\web\get_url_parameter.sql
+[0m01:20:11.088701 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\at_least_one.sql
+[0m01:20:11.088701 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_single_value.sql
+[0m01:20:11.089704 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_table_types_sql.sql
+[0m01:20:11.089704 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\mutually_exclusive_ranges.sql
+[0m01:20:11.090706 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\not_constant.sql
+[0m01:20:11.090706 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\pretty_time.sql
+[0m01:20:11.090706 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\_is_ephemeral.sql
+[0m01:20:11.091709 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\web\get_url_path.sql
+[0m01:20:11.091709 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\generate_surrogate_key.sql
+[0m01:20:11.092712 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\equality.sql
+[0m01:20:11.092712 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\equal_rowcount.sql
+[0m01:20:11.092712 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\haversine_distance.sql
+[0m01:20:11.092712 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\expression_is_true.sql
+[0m01:20:11.093717 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\pretty_log_format.sql
+[0m01:20:11.093717 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\web\get_url_host.sql
+[0m01:20:11.093717 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\_is_relation.sql
+[0m01:20:11.094717 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\cardinality_equality.sql
+[0m01:20:11.094717 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_relations_by_prefix.sql
+[0m01:20:11.095221 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\union.sql
+[0m01:20:11.095221 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\accepted_range.sql
+[0m01:20:11.095221 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\log_info.sql
+[0m01:20:11.095221 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\deduplicate.sql
+[0m01:20:11.096241 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\fewer_rows_than.sql
+[0m01:20:11.096241 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\jinja_helpers\slugify.sql
+[0m01:20:11.096241 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\generate_series.sql
+[0m01:20:11.097244 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\sequential_values.sql
+[0m01:20:11.097244 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\unpivot.sql
+[0m01:20:11.097244 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_column_values.sql
+[0m01:20:11.097244 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_filtered_columns_in_relation.sql
+[0m01:20:11.098246 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_tables_by_pattern_sql.sql
+[0m01:20:11.098246 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_tables_by_prefix_sql.sql
+[0m01:20:11.098246 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\relationships_where.sql
+[0m01:20:11.099253 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\safe_subtract.sql
+[0m01:20:11.099253 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\groupby.sql
+[0m01:20:11.099253 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\not_accepted_values.sql
+[0m01:20:11.099253 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\safe_add.sql
+[0m01:20:11.100255 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\width_bucket.sql
+[0m01:20:11.100255 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\not_empty_string.sql
+[0m01:20:11.100255 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\date_spine.sql
+[0m01:20:11.100255 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_relations_by_pattern.sql
+[0m01:20:11.101257 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\get_query_results_as_dict.sql
+[0m01:20:11.101257 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\not_null_proportion.sql
+[0m01:20:11.101257 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\nullcheck_table.sql
+[0m01:20:11.102260 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\sql\safe_divide.sql
+[0m01:20:11.102260 [debug] [MainThread]: Partial parsing: updated file: dbt_utils://macros\generic_tests\unique_combination_of_columns.sql
+[0m01:20:11.600455 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_tpch_lineitem'
+in package 'Modern_Data_Stack_TPCH_Pipeline' (models\staging\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m01:20:11.601459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C6EC0410>]}
+[0m01:20:11.708369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C6FC6330>]}
+[0m01:20:11.795960 [debug] [MainThread]: Wrote artifact WritableManifest to D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\target\manifest.json
+[0m01:20:11.797966 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\target\semantic_manifest.json
+[0m01:20:11.902919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C0622210>]}
+[0m01:20:11.902919 [info ] [MainThread]: Found 11 models, 50 data tests, 7 sources, 640 macros
+[0m01:20:11.902919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C7089580>]}
+[0m01:20:11.906473 [info ] [MainThread]: 
+[0m01:20:11.907476 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m01:20:11.907476 [info ] [MainThread]: 
+[0m01:20:11.907476 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:20:11.912494 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dbt_db_dbt_schema'
+[0m01:20:11.977620 [debug] [ThreadPool]: Using snowflake connection "list_dbt_db_dbt_schema"
+[0m01:20:11.978626 [debug] [ThreadPool]: On list_dbt_db_dbt_schema: show objects in dbt_db.dbt_schema
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "connection_name": "list_dbt_db_dbt_schema"} */;
+[0m01:20:11.978626 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:20:13.023604 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 1.045 seconds
+[0m01:20:13.027124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b12549b-53e4-4b6b-9a1b-619b6d457a58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C3786240>]}
+[0m01:20:13.033144 [debug] [Thread-2 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411
+[0m01:20:13.033144 [debug] [Thread-3 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9
+[0m01:20:13.034647 [debug] [Thread-4 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956
+[0m01:20:13.034647 [debug] [Thread-5 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde
+[0m01:20:13.034647 [info ] [Thread-2 (]: 1 of 14 START test not_null_dim_customers_customer_key ......................... [RUN]
+[0m01:20:13.035663 [debug] [Thread-6 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f
+[0m01:20:13.035663 [debug] [Thread-7 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c
+[0m01:20:13.035663 [info ] [Thread-3 (]: 2 of 14 START test not_null_dim_parts_part_key ................................. [RUN]
+[0m01:20:13.036666 [debug] [Thread-8 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8
+[0m01:20:13.036666 [debug] [Thread-9 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3
+[0m01:20:13.036666 [info ] [Thread-4 (]: 3 of 14 START test not_null_dim_suppliers_supplier_key ......................... [RUN]
+[0m01:20:13.037671 [debug] [Thread-10 ]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08
+[0m01:20:13.037671 [debug] [Thread-11 ]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7
+[0m01:20:13.037671 [info ] [Thread-5 (]: 4 of 14 START test not_null_fct_order_items_customer_key ....................... [RUN]
+[0m01:20:13.038692 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411'
+[0m01:20:13.038692 [info ] [Thread-6 (]: 5 of 14 START test not_null_fct_order_items_order_key .......................... [RUN]
+[0m01:20:13.039706 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9'
+[0m01:20:13.038692 [info ] [Thread-7 (]: 6 of 14 START test not_null_fct_order_items_part_key ........................... [RUN]
+[0m01:20:13.039706 [info ] [Thread-8 (]: 7 of 14 START test not_null_fct_order_items_supplier_key ....................... [RUN]
+[0m01:20:13.040709 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956'
+[0m01:20:13.040709 [info ] [Thread-9 (]: 8 of 14 START test relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_  [RUN]
+[0m01:20:13.040709 [info ] [Thread-10 ]: 9 of 14 START test relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_  [RUN]
+[0m01:20:13.041712 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde'
+[0m01:20:13.041712 [info ] [Thread-11 ]: 10 of 14 START test relationships_fct_order_items_part_key__part_key__ref_dim_parts_  [RUN]
+[0m01:20:13.042714 [debug] [Thread-2 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411
+[0m01:20:13.042714 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f'
+[0m01:20:13.042714 [debug] [Thread-3 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9
+[0m01:20:13.043720 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c'
+[0m01:20:13.043720 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8'
+[0m01:20:13.043720 [debug] [Thread-4 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956
+[0m01:20:13.044720 [debug] [Thread-9 (]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3'
+[0m01:20:13.045224 [debug] [Thread-10 ]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08'
+[0m01:20:13.045224 [debug] [Thread-5 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde
+[0m01:20:13.046230 [debug] [Thread-11 ]: Acquiring new snowflake connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7'
+[0m01:20:13.058801 [debug] [Thread-2 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411"
+[0m01:20:13.058801 [debug] [Thread-6 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f
+[0m01:20:13.064819 [debug] [Thread-3 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9"
+[0m01:20:13.064819 [debug] [Thread-7 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c
+[0m01:20:13.065323 [debug] [Thread-8 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8
+[0m01:20:13.068562 [debug] [Thread-4 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956"
+[0m01:20:13.069616 [debug] [Thread-9 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3
+[0m01:20:13.069616 [debug] [Thread-10 ]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08
+[0m01:20:13.072625 [debug] [Thread-5 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde"
+[0m01:20:13.073627 [debug] [Thread-11 ]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7
+[0m01:20:13.076135 [debug] [Thread-6 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f"
+[0m01:20:13.080149 [debug] [Thread-7 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c"
+[0m01:20:13.083157 [debug] [Thread-8 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8"
+[0m01:20:13.084660 [debug] [Thread-2 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411
+[0m01:20:13.084660 [debug] [Thread-3 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9
+[0m01:20:13.088800 [debug] [Thread-9 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3"
+[0m01:20:13.092812 [debug] [Thread-10 ]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08"
+[0m01:20:13.097836 [debug] [Thread-11 ]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7"
+[0m01:20:13.097836 [debug] [Thread-4 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956
+[0m01:20:13.119606 [debug] [Thread-2 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411"
+[0m01:20:13.120608 [debug] [Thread-5 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde
+[0m01:20:13.122614 [debug] [Thread-3 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9"
+[0m01:20:13.122614 [debug] [Thread-6 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f
+[0m01:20:13.123617 [debug] [Thread-7 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c
+[0m01:20:13.123617 [debug] [Thread-8 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8
+[0m01:20:13.126129 [debug] [Thread-4 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956"
+[0m01:20:13.127132 [debug] [Thread-9 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3
+[0m01:20:13.129257 [debug] [Thread-5 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde"
+[0m01:20:13.129257 [debug] [Thread-11 ]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7
+[0m01:20:13.130260 [debug] [Thread-10 ]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08
+[0m01:20:13.132294 [debug] [Thread-6 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f"
+[0m01:20:13.133298 [debug] [Thread-7 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c"
+[0m01:20:13.134801 [debug] [Thread-2 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411"
+[0m01:20:13.136821 [debug] [Thread-8 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8"
+[0m01:20:13.136821 [debug] [Thread-3 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9"
+[0m01:20:13.138833 [debug] [Thread-9 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3"
+[0m01:20:13.142849 [debug] [Thread-11 ]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7"
+[0m01:20:13.144855 [debug] [Thread-10 ]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08"
+[0m01:20:13.145359 [debug] [Thread-4 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956"
+[0m01:20:13.145359 [debug] [Thread-2 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from dbt_db.dbt_schema.dim_customers
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411"} */
+[0m01:20:13.146363 [debug] [Thread-5 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde"
+[0m01:20:13.147385 [debug] [Thread-3 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select part_key
+from dbt_db.dbt_schema.dim_parts
+where part_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9"} */
+[0m01:20:13.147385 [debug] [Thread-6 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f"
+[0m01:20:13.148389 [debug] [Thread-7 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c"
+[0m01:20:13.149394 [debug] [Thread-4 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select supplier_key
+from dbt_db.dbt_schema.dim_suppliers
+where supplier_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956"} */
+[0m01:20:13.149394 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:20:13.150399 [debug] [Thread-8 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8"
+[0m01:20:13.150399 [debug] [Thread-5 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from dbt_db.dbt_schema.fct_order_items
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde"} */
+[0m01:20:13.151402 [debug] [Thread-9 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3"
+[0m01:20:13.152405 [debug] [Thread-11 ]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7"
+[0m01:20:13.152405 [debug] [Thread-10 ]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08"
+[0m01:20:13.153407 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:20:13.153407 [debug] [Thread-6 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_key
+from dbt_db.dbt_schema.fct_order_items
+where order_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f"} */
+[0m01:20:13.153407 [debug] [Thread-7 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select part_key
+from dbt_db.dbt_schema.fct_order_items
+where part_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c"} */
+[0m01:20:13.153407 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:20:13.154911 [debug] [Thread-8 (]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select supplier_key
+from dbt_db.dbt_schema.fct_order_items
+where supplier_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8"} */
+[0m01:20:13.154911 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m01:20:13.154911 [debug] [Thread-9 (]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_key as from_field
+    from dbt_db.dbt_schema.fct_order_items
+    where customer_key is not null
+),
+
+parent as (
+    select customer_key as to_field
+    from dbt_db.dbt_schema.dim_customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3"} */
+[0m01:20:13.155928 [debug] [Thread-11 ]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select part_key as from_field
+    from dbt_db.dbt_schema.fct_order_items
+    where part_key is not null
+),
+
+parent as (
+    select part_key as to_field
+    from dbt_db.dbt_schema.dim_parts
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7"} */
+[0m01:20:13.155928 [debug] [Thread-10 ]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select order_key as from_field
+    from dbt_db.dbt_schema.fct_order_items
+    where order_key is not null
+),
+
+parent as (
+    select order_key as to_field
+    from dbt_db.dbt_schema.stg_tpch_orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08"} */
+[0m01:20:13.156930 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m01:20:13.156930 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m01:20:13.157933 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m01:20:13.158936 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m01:20:13.159950 [debug] [Thread-11 ]: Opening a new connection, currently in state init
+[0m01:20:13.160953 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m01:20:14.917052 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.760 seconds
+[0m01:20:14.925556 [info ] [Thread-6 (]: 5 of 14 PASS not_null_fct_order_items_order_key ................................ [[32mPASS[0m in 1.88s]
+[0m01:20:14.926900 [debug] [Thread-6 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f
+[0m01:20:14.926900 [debug] [Thread-6 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601
+[0m01:20:14.928345 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 1.771 seconds
+[0m01:20:14.929346 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 1.771 seconds
+[0m01:20:14.932355 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.778 seconds
+[0m01:20:14.928345 [info ] [Thread-6 (]: 11 of 14 START test relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_  [RUN]
+[0m01:20:14.931355 [info ] [Thread-7 (]: 6 of 14 PASS not_null_fct_order_items_part_key ................................. [[32mPASS[0m in 1.89s]
+[0m01:20:14.933355 [info ] [Thread-8 (]: 7 of 14 PASS not_null_fct_order_items_supplier_key ............................. [[32mPASS[0m in 1.89s]
+[0m01:20:14.935877 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_order_key.d8bbea4f5f, now test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601)
+[0m01:20:14.935877 [info ] [Thread-5 (]: 4 of 14 PASS not_null_fct_order_items_customer_key ............................. [[32mPASS[0m in 1.89s]
+[0m01:20:14.937192 [debug] [Thread-7 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c
+[0m01:20:14.937192 [debug] [Thread-8 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8
+[0m01:20:14.937192 [debug] [Thread-6 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601
+[0m01:20:14.938497 [debug] [Thread-5 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde
+[0m01:20:14.938497 [debug] [Thread-7 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e
+[0m01:20:14.939500 [debug] [Thread-8 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58
+[0m01:20:14.945159 [debug] [Thread-6 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601"
+[0m01:20:14.945159 [debug] [Thread-5 (]: Began running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770
+[0m01:20:14.946583 [info ] [Thread-7 (]: 12 of 14 START test unique_dim_customers_customer_key .......................... [RUN]
+[0m01:20:14.947595 [info ] [Thread-8 (]: 13 of 14 START test unique_dim_parts_part_key .................................. [RUN]
+[0m01:20:14.948599 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_part_key.869c88d62c, now test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e)
+[0m01:20:14.947595 [info ] [Thread-5 (]: 14 of 14 START test unique_dim_suppliers_supplier_key .......................... [RUN]
+[0m01:20:14.948599 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_supplier_key.a9b04719f8, now test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58)
+[0m01:20:14.949901 [debug] [Thread-7 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e
+[0m01:20:14.949901 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.Modern_Data_Stack_TPCH_Pipeline.not_null_fct_order_items_customer_key.3592af3dde, now test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770)
+[0m01:20:14.950905 [debug] [Thread-6 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601
+[0m01:20:14.950905 [debug] [Thread-8 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58
+[0m01:20:14.958124 [debug] [Thread-7 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e"
+[0m01:20:14.958124 [debug] [Thread-5 (]: Began compiling node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770
+[0m01:20:14.963621 [debug] [Thread-6 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601"
+[0m01:20:14.968141 [debug] [Thread-8 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58"
+[0m01:20:14.971525 [debug] [Thread-5 (]: Writing injected SQL for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770"
+[0m01:20:14.972528 [debug] [Thread-7 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e
+[0m01:20:14.973829 [debug] [Thread-6 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601"
+[0m01:20:14.976337 [debug] [Thread-7 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e"
+[0m01:20:14.976337 [debug] [Thread-8 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58
+[0m01:20:14.976337 [debug] [Thread-6 (]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select supplier_key as from_field
+    from dbt_db.dbt_schema.fct_order_items
+    where supplier_key is not null
+),
+
+parent as (
+    select supplier_key as to_field
+    from dbt_db.dbt_schema.dim_suppliers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601"} */
+[0m01:20:14.977341 [debug] [Thread-5 (]: Began executing node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770
+[0m01:20:14.979343 [debug] [Thread-8 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58"
+[0m01:20:14.981722 [debug] [Thread-5 (]: Writing runtime sql for node "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770"
+[0m01:20:14.981722 [debug] [Thread-7 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e"
+[0m01:20:14.983022 [debug] [Thread-7 (]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_key as unique_field,
+    count(*) as n_records
+
+from dbt_db.dbt_schema.dim_customers
+where customer_key is not null
+group by customer_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e"} */
+[0m01:20:14.984026 [debug] [Thread-8 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58"
+[0m01:20:14.985532 [debug] [Thread-5 (]: Using snowflake connection "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770"
+[0m01:20:14.985532 [debug] [Thread-8 (]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    part_key as unique_field,
+    count(*) as n_records
+
+from dbt_db.dbt_schema.dim_parts
+where part_key is not null
+group by part_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58"} */
+[0m01:20:14.986536 [debug] [Thread-5 (]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    supplier_key as unique_field,
+    count(*) as n_records
+
+from dbt_db.dbt_schema.dim_suppliers
+where supplier_key is not null
+group by supplier_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "Modern_Data_Stack_TPCH_Pipeline", "target_name": "dev", "node_id": "test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770"} */
+[0m01:20:15.217415 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.068 seconds
+[0m01:20:15.217415 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.064 seconds
+[0m01:20:15.220426 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.067 seconds
+[0m01:20:15.219423 [info ] [Thread-2 (]: 1 of 14 PASS not_null_dim_customers_customer_key ............................... [[32mPASS[0m in 2.18s]
+[0m01:20:15.222474 [info ] [Thread-4 (]: 3 of 14 PASS not_null_dim_suppliers_supplier_key ............................... [[32mPASS[0m in 2.18s]
+[0m01:20:15.223477 [debug] [Thread-2 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411
+[0m01:20:15.224980 [debug] [Thread-4 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956
+[0m01:20:15.223477 [info ] [Thread-3 (]: 2 of 14 PASS not_null_dim_parts_part_key ....................................... [[32mPASS[0m in 2.18s]
+[0m01:20:15.224980 [debug] [Thread-3 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9
+[0m01:20:15.400990 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.413 seconds
+[0m01:20:15.401995 [info ] [Thread-5 (]: 14 of 14 PASS unique_dim_suppliers_supplier_key ................................ [[32mPASS[0m in 0.45s]
+[0m01:20:15.403001 [debug] [Thread-5 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770
+[0m01:20:15.427899 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.444 seconds
+[0m01:20:15.429901 [info ] [Thread-7 (]: 12 of 14 PASS unique_dim_customers_customer_key ................................ [[32mPASS[0m in 0.48s]
+[0m01:20:15.429901 [debug] [Thread-7 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e
+[0m01:20:15.501368 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.514 seconds
+[0m01:20:15.502367 [info ] [Thread-8 (]: 13 of 14 PASS unique_dim_parts_part_key ........................................ [[32mPASS[0m in 0.55s]
+[0m01:20:15.503368 [debug] [Thread-8 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58
+[0m01:20:15.714065 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 2.555 seconds
+[0m01:20:15.715569 [info ] [Thread-9 (]: 8 of 14 PASS relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_  [[32mPASS[0m in 2.67s]
+[0m01:20:15.716572 [debug] [Thread-9 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3
+[0m01:20:15.719454 [debug] [Thread-10 ]: SQL status: SUCCESS 1 in 2.559 seconds
+[0m01:20:15.721455 [info ] [Thread-10 ]: 9 of 14 PASS relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_  [[32mPASS[0m in 2.68s]
+[0m01:20:15.721455 [debug] [Thread-10 ]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08
+[0m01:20:15.797747 [debug] [Thread-11 ]: SQL status: SUCCESS 1 in 2.637 seconds
+[0m01:20:15.799747 [info ] [Thread-11 ]: 10 of 14 PASS relationships_fct_order_items_part_key__part_key__ref_dim_parts_ . [[32mPASS[0m in 2.75s]
+[0m01:20:15.799747 [debug] [Thread-11 ]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7
+[0m01:20:15.944155 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.965 seconds
+[0m01:20:15.946173 [info ] [Thread-6 (]: 11 of 14 PASS relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_  [[32mPASS[0m in 1.01s]
+[0m01:20:15.946173 [debug] [Thread-6 (]: Finished running node test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601
+[0m01:20:15.948179 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:20:15.948179 [debug] [MainThread]: Connection 'list_dbt_db_dbt_schema' was left open.
+[0m01:20:15.948179 [debug] [MainThread]: On list_dbt_db_dbt_schema: Close
+[0m01:20:16.164050 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411' was left open.
+[0m01:20:16.165050 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_customers_customer_key.4bebfb3411: Close
+[0m01:20:16.485891 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9' was left open.
+[0m01:20:16.485891 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_parts_part_key.4358f880d9: Close
+[0m01:20:16.730261 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956' was left open.
+[0m01:20:16.730261 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.not_null_dim_suppliers_supplier_key.4315350956: Close
+[0m01:20:16.955948 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770' was left open.
+[0m01:20:16.955948 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_suppliers_supplier_key.58fc3e4770: Close
+[0m01:20:17.196174 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601' was left open.
+[0m01:20:17.196174 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_supplier_key__supplier_key__ref_dim_suppliers_.585cd92601: Close
+[0m01:20:17.413137 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e' was left open.
+[0m01:20:17.414141 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_customers_customer_key.ad8156656e: Close
+[0m01:20:17.694281 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58' was left open.
+[0m01:20:17.695281 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.unique_dim_parts_part_key.712df18d58: Close
+[0m01:20:17.957926 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3' was left open.
+[0m01:20:17.958941 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_customer_key__customer_key__ref_dim_customers_.0e2d1a18f3: Close
+[0m01:20:18.222452 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08' was left open.
+[0m01:20:18.223452 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_order_key__order_key__ref_stg_tpch_orders_.13b5465d08: Close
+[0m01:20:18.456196 [debug] [MainThread]: Connection 'test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7' was left open.
+[0m01:20:18.456196 [debug] [MainThread]: On test.Modern_Data_Stack_TPCH_Pipeline.relationships_fct_order_items_part_key__part_key__ref_dim_parts_.10301138b7: Close
+[0m01:20:18.691380 [info ] [MainThread]: 
+[0m01:20:18.692381 [info ] [MainThread]: Finished running 14 data tests in 0 hours 0 minutes and 6.78 seconds (6.78s).
+[0m01:20:18.694469 [debug] [MainThread]: Command end result
+[0m01:20:18.733235 [debug] [MainThread]: Wrote artifact WritableManifest to D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\target\manifest.json
+[0m01:20:18.735237 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\target\semantic_manifest.json
+[0m01:20:18.740525 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\User\umcha\Desktop\Data_Workstation\Modern-Data-Stack-TPCH-Pipeline\target\run_results.json
+[0m01:20:18.741528 [info ] [MainThread]: 
+[0m01:20:18.741528 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:20:18.741528 [info ] [MainThread]: 
+[0m01:20:18.742532 [info ] [MainThread]: Done. PASS=14 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=14
+[0m01:20:18.743551 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 5 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m01:20:18.743551 [debug] [MainThread]: Command `dbt test` succeeded at 01:20:18.743551 after 8.74 seconds
+[0m01:20:18.743551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C535C530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C2E1B6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244C3B062A0>]}
+[0m01:20:18.743551 [debug] [MainThread]: Flushing usage events
+[0m01:20:19.270034 [debug] [MainThread]: An error was encountered while trying to flush usage events

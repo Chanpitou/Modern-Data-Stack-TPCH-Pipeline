@@ -1,2 +1,4 @@
 data_venv/
 .idea/
+.env
+pg_data/
